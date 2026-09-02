@@ -19,7 +19,6 @@
 - 使用语言
 - 报名方式、截止日期或参加条件
 - 相关链接
-- 附件情况
 
 ## 使用方法
 
@@ -35,15 +34,16 @@
 8. 设置对应的运行时间：第一份工作流为每天 `13:05`，第二份工作流为每天 `21:05`。
 9. 先使用 **Run once** 测试，确认读取范围、摘要内容和收件地址正确后，再启用定时运行。
 
+> [!IMPORTANT]
+> 请务必检查 Outlook 邮箱与 Make Scenario 的时区设置，并确保二者与 Filter 中使用的时区一致。当前 Blueprint 的时间计算使用 `Asia/Shanghai`；如果账号或 Scenario 使用其他时区，请同步修改 Filter，否则邮件可能被划入错误的汇总时间段。
+
 ## 导入后必须修改
 
 Blueprint 中的个人账号信息已经移除。以下内容是占位符或原账号的内部引用，导入后需要重新配置：
 
 - Outlook 连接
 - DeepSeek 连接和 API Key
-- Outlook 邮件文件夹
 - 收件地址 `generated`
-- Scenario 的运行时间
 
 ## 两个时间段
 
@@ -84,5 +84,5 @@ Outlook 模块先用 `received:today` 或 `received:yesterday OR received:today`
 
 ## License
 
-当前仓库尚未附带开源许可证。如果你希望允许他人复制、修改和分发本项目，建议后续添加合适的许可证，例如 MIT License。
+本项目采用 [MIT License](LICENSE) 开源。你可以自由使用、复制、修改和分发本项目，但需要保留原始版权声明和许可证文本。
 
