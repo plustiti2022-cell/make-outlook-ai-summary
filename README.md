@@ -98,8 +98,6 @@ Outlook 模块先用 `received:today` 或 `received:yesterday OR received:today`
 
 此工作流读取只能读取邮件里的文字内容，邮件附件和邮件正文里的贴图都无法读取，生成摘要仅供参考
 
-本仓库不包含 Outlook 密码、OAuth Token 或 DeepSeek API Key。请勿将自己的 API Key、访问令牌、个人邮箱地址或包含真实邮件内容的运行记录提交到公开仓库。
-
 ## 文件
 
 - `Outlook 邮件 AI 汇总_21点至次日13点_13点05触发.blueprint.json`：建议每天 13:05 运行，汇总昨日 21:00 至今日 13:00 的邮件。
