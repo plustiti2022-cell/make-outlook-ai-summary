@@ -47,10 +47,10 @@
 
 ## 使用方法
 
-1. 根据需要下载仓库中的一个或两个 Blueprint：
+1. 下载仓库中的两个 Blueprint：
    - `Outlook 邮件 AI 汇总_21点至次日13点_13点05触发.blueprint.json`
    - `Outlook 邮件 AI 汇总_13点至21点_21点05触发.blueprint.json`
-2. 登录 [Make](https://www.make.com/)，新建一个 Scenario。
+2. 登录 [Make](https://www.make.com/)，新建两个 Scenario，一个json文件对应一个 Scenario。
 3. 选择 **Import Blueprint**，导入下载的 JSON 文件。
 4. 为两个 Microsoft Email 模块连接前置准备工作中设置的中转 Outlook 账号。
 5. 为 DeepSeek 模块创建连接并填写你自己的 API Key。
